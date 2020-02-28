@@ -7,6 +7,7 @@ README.md
 .scannerwork
 
 !packages/gin-basic/**/*
+!packages/HelloVapor/**/*
 
 !packages/nest/*.json
 !packages/nest/src
