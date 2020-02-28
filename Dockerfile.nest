@@ -1,4 +1,5 @@
-# docker build -f Dockerfile.nest -t azamara/drone-examples-nest:0.0.1
+# docker build -f Dockerfile.nest -t azamara/drone-examples-nest:0.0.1 .
+# docker run -p 3000:3000 -t azamara/drone-examples-nest:0.0.1
 # docker tag azamara/drone-examples-nest:0.0.1 azamara/drone-examples-nest:latest
 
 FROM node:10.19.0
@@ -8,6 +9,10 @@ RUN apt-get install -y curl
 COPY packages/nest/package.json /service/packages/nest/package.json
 
 RUN cd /service/packages/nest; npm install
+
+COPY packages/nest/src /service/packages/nest/src
+COPY packages/nest/tsconfig.json /service/packages/nest/tsconfig.json
+COPY packages/nest/tsconfig.build.json /service/packages/nest/tsconfig.build.json
 
 WORKDIR /service/packages/nest
 
