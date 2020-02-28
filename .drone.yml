@@ -1,23 +1,5 @@
 kind: pipeline
 type: docker
-name: nest
-
-steps:
-  - name: build image
-    image: plugins/docker
-    settings:
-      cache_from: "azamara/drone-examples-nest:latest"
-      username:
-        from_secret: docker_username
-      password:
-        from_secret: docker_password
-      dockerfile: Dockerfile.nest
-      repo: azamara/drone-examples-nest
-
----
-
-kind: pipeline
-type: docker
 name: gin-basic
 
 steps:
@@ -49,3 +31,57 @@ steps:
         from_secret: docker_password
       dockerfile: Dockerfile.hello-vapor
       repo: azamara/drone-examples-hello-vapor
+
+---
+
+kind: pipeline
+type: docker
+name: hello-php
+
+steps:
+  - name: build image
+    image: plugins/docker
+    settings:
+      cache_from: "azamara/drone-examples-hello-php:latest"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile.hello-php
+      repo: azamara/drone-examples-hello-php
+
+---
+
+kind: pipeline
+type: docker
+name: hello-python3
+
+steps:
+  - name: build image
+    image: plugins/docker
+    settings:
+      cache_from: "azamara/drone-examples-hello-python3:latest"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile.hello-python3
+      repo: azamara/drone-examples-hello-python3
+
+---
+
+kind: pipeline
+type: docker
+name: nest
+
+steps:
+  - name: build image
+    image: plugins/docker
+    settings:
+      cache_from: "azamara/drone-examples-nest:latest"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile.nest
+      repo: azamara/drone-examples-nest

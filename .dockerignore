@@ -12,6 +12,8 @@ README.md
 .scannerwork
 
 !packages/gin-basic/**/*
+!packages/hello-php/**/*
+!packages/hello-python3/**/*
 !packages/HelloVapor/**/*
 
 !packages/nest/*.json

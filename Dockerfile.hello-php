@@ -1,0 +1,11 @@
+# docker build -f Dockerfile.hello-php -t azamara/drone-examples-hello-php:0.0.1 .
+# docker run -p 30080:80 -t azamara/drone-examples-hello-php:0.0.1
+# docker tag azamara/drone-examples-hello-php:0.0.1 azamara/drone-examples-hello-php:latest
+
+FROM php:7.0-apache
+
+RUN apt-get install -y curl
+
+COPY packages/hello-php /var/www/html
+
+EXPOSE 80
