@@ -9,6 +9,8 @@ COPY packages/nest/package.json /service/packages/nest/package.json
 
 RUN cd /service/packages/nest; npm install
 
+WORKDIR /service/packages/nest
+
 RUN npm install
 
 RUN npm run build
