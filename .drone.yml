@@ -10,8 +10,6 @@ steps:
       - echo world
   - name: build image
     image: plugins/docker
-    commands:
-      - echo "Hello world"
     settings:
       username:
         from_secret: docker_username
