@@ -36,7 +36,7 @@ steps:
 
 kind: pipeline
 type: docker
-name: gin-basic
+name: hello-vapor
 
 steps:
   - name: build image
