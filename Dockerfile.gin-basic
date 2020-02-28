@@ -1,0 +1,19 @@
+# docker build -f Dockerfile.gin-basic -t azamara/drone-examples-gin-basic:0.0.1 .
+# docker run -p 3000:3000 -t azamara/drone-examples-gin-basic:0.0.1
+# docker tag azamara/drone-examples-gin-basic:0.0.1 azamara/drone-examples-gin-basic:latest
+
+FROM golang:1.13
+
+RUN apt-get install -y curl
+
+COPY packages/gin-basic /go/src
+
+RUN cd /go/src; go get ./...
+
+WORKDIR /go/src
+
+RUN go build main.go
+
+EXPOSE 8080
+
+ENTRYPOINT ["./main"]

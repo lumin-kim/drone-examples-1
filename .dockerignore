@@ -6,6 +6,8 @@ package-lock.json
 README.md
 .scannerwork
 
+!packages/gin-basic/**/*
+
 !packages/nest/*.json
 !packages/nest/src
 !packages/nest/dist
