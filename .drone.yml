@@ -8,3 +8,15 @@ steps:
     commands:
       - echo hello
       - echo world
+  - name: build image
+    image: plugins/docker
+    environment:
+      USERNAME:
+        from_secret: docker_username
+      PASSWORD:
+        from_secret: docker_password
+    settings:
+      username: $USERNAME
+      password: $PASSWORD
+      dockerfile: Dockerfile.nest
+      repo: azamara/drone-examples-nest

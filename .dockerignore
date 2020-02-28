@@ -1,0 +1,17 @@
+node_modules
+packages/**/*
+.editorconfig
+.gitignore
+package-lock.json
+README.md
+.scannerwork
+!packages/nest/package.json
+
+!packages/nest/nest-cli.json
+!packages/nest/src/**/*
+!packages/nest/dist/**/*
+!packages/nest/tsconfig.json
+!packages/nest/tsconfig.build.json
+!packages/nest/tslint.json
+!packages/nest/tools
+
