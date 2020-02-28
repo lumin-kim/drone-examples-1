@@ -1,5 +1,5 @@
 # docker build -f Dockerfile.gin-basic -t azamara/drone-examples-gin-basic:0.0.1 .
-# docker run -p 3000:3000 -t azamara/drone-examples-gin-basic:0.0.1
+# docker run -p 8080:8080 -t azamara/drone-examples-gin-basic:0.0.1
 # docker tag azamara/drone-examples-gin-basic:0.0.1 azamara/drone-examples-gin-basic:latest
 
 FROM golang:1.13
