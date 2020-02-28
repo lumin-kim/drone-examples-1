@@ -31,3 +31,21 @@ steps:
         from_secret: docker_password
       dockerfile: Dockerfile.gin-basic
       repo: azamara/drone-examples-gin-basic
+
+---
+
+kind: pipeline
+type: docker
+name: gin-basic
+
+steps:
+  - name: build image
+    image: plugins/docker
+    settings:
+      cache_from: "azamara/drone-examples-hello-vapor"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile.hello-vapor
+      repo: azamara/drone-examples-hello-vapor
