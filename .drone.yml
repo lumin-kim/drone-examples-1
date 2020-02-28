@@ -18,24 +18,6 @@ steps:
 
 kind: pipeline
 type: docker
-name: hello-vapor
-
-steps:
-  - name: build image
-    image: plugins/docker
-    settings:
-      cache_from: "azamara/drone-examples-hello-vapor"
-      username:
-        from_secret: docker_username
-      password:
-        from_secret: docker_password
-      dockerfile: Dockerfile.hello-vapor
-      repo: azamara/drone-examples-hello-vapor
-
----
-
-kind: pipeline
-type: docker
 name: hello-php
 
 steps:
@@ -67,6 +49,24 @@ steps:
         from_secret: docker_password
       dockerfile: Dockerfile.hello-python3
       repo: azamara/drone-examples-hello-python3
+
+---
+
+kind: pipeline
+type: docker
+name: hello-vapor
+
+steps:
+  - name: build image
+    image: plugins/docker
+    settings:
+      cache_from: "azamara/drone-examples-hello-vapor"
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      dockerfile: Dockerfile.hello-vapor
+      repo: azamara/drone-examples-hello-vapor
 
 ---
 
