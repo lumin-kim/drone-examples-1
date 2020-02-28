@@ -9,10 +9,12 @@ COPY packages/nest/package.json /service/packages/nest/package.json
 
 RUN cd /service/packages/nest; npm install
 
-WORKDIR /service/packages/nest
-
 RUN npm install
 
-EXPOSE 4000
+RUN npm run build
 
-ENTRYPOINT ["npm", "start"]
+WORKDIR /service/packages/nest/dist
+
+EXPOSE 3000
+
+ENTRYPOINT ["node", "main.js"]
