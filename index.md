@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+[![Build Status](https://cloud.drone.io/api/badges/azamara/drone-examples/status.svg)](https://cloud.drone.io/azamara/drone-examples)
 
-You can use the [editor on GitHub](https://github.com/az5-dev/drone-examples/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A collection of simple drone-ci examples. There are docker files for build for each language below.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Golang: [Dockerfile.gin-basic](https://github.com/lumin-kim/drone-examples/blob/master/Dockerfile.gin-basic)
+- PHP: [Dockerfile.hello-php](https://github.com/lumin-kim/drone-examples/blob/master/Dockerfile.hello-php)
+- Python3: [Dockerfile.hello-python3](https://github.com/lumin-kim/drone-examples/blob/master/Dockerfile.hello-python3)
+- Swift: [Dockerfile.hello-vapor](https://github.com/lumin-kim/drone-examples/blob/master/Dockerfile.hello-vapor)
+- Nestjs: [Dockerfile.nest](https://github.com/lumin-kim/drone-examples/blob/master/Dockerfile.nest)
 
-### Markdown
+## Screenshot
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Golang](https://cloud.drone.io/azamara/drone-examples/16/1/2) | [Nest.js](https://cloud.drone.io/azamara/drone-examples/16/5/2)
+:--: | :--:
+![](https://d.pr/i/swUy3O+) | ![](https://d.pr/i/umCqt2+)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/az5-dev/drone-examples/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Swift](https://cloud.drone.io/azamara/drone-examples/16/2/2) | [PHP](https://cloud.drone.io/azamara/drone-examples/16/3/2) | [Python3](https://cloud.drone.io/azamara/drone-examples/16/4/2)
+:--: | :--: | :--:
+![](https://d.pr/i/Cjel5d+) | ![](https://d.pr/i/ge25Bh+) | ![](https://d.pr/i/q8Ssso+) |
