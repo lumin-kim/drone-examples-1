@@ -12,5 +12,10 @@ A collection of simple drone-ci examples. There are docker files for build for e
 
 ## Screenshot
 
-[Golang](https://cloud.drone.io/azamara/drone-examples/16/1/2) | [Swift](https://cloud.drone.io/azamara/drone-examples/16/2/2) | [PHP](https://cloud.drone.io/azamara/drone-examples/16/3/2) | [Python3](https://cloud.drone.io/azamara/drone-examples/16/4/2) | [Nest.js](https://cloud.drone.io/azamara/drone-examples/16/5/2)
-:--: | :--: | :--: | :--: | :--:
+[Golang](https://cloud.drone.io/azamara/drone-examples/16/1/2) | [Nest.js](https://cloud.drone.io/azamara/drone-examples/16/5/2)
+:--: | :--:
+![](https://d.pr/i/fOSrY5+) | ![](https://d.pr/i/IAxsGl+)
+
+[Swift](https://cloud.drone.io/azamara/drone-examples/16/2/2) | [PHP](https://cloud.drone.io/azamara/drone-examples/16/3/2) | [Python3](https://cloud.drone.io/azamara/drone-examples/16/4/2)
+:--: | :--: | :--:
+![](https://d.pr/i/SzDo9Q+) | ![](https://d.pr/i/4KcYa0+) | ![](https://d.pr/i/hxHppP+) |
