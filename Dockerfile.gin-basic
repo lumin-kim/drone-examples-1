@@ -2,7 +2,7 @@
 # docker run -p 8080:8080 -t azamara/drone-examples-gin-basic:0.0.1
 # docker tag azamara/drone-examples-gin-basic:0.0.1 azamara/drone-examples-gin-basic:latest
 
-FROM golang:1.13
+FROM golang:1.17
 
 RUN apt-get install -y curl
 
