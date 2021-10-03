@@ -2,7 +2,7 @@
 # docker run -p 8000:8000 -t azamara/drone-examples-hello-python3:0.0.1
 # docker tag azamara/drone-examples-hello-python3:0.0.1 azamara/drone-examples-hello-python3:latest
 
-FROM python:3.8.2
+FROM python:3.9-alpine
 
 RUN apt-get install -y curl
 
